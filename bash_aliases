@@ -1,6 +1,10 @@
 # file/directory operations
 alias ls="ls -GF"
 alias ll="ls -lh"
+alias gca="git commit --amend"
+alias gcan="git commit --amend --no-edit"
+alias gcand="git commit --amend --no-edit --date='now'"
+alias sshagent='eval "$(ssh-agent -s)"'
 
 # open in other program
 alias f="open -a Finder ./"
