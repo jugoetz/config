@@ -27,4 +27,12 @@ cp oh-my-bash/custom/themes/font/font.theme.sh ~/.oh-my-bash/custom/themes/font/
 
 Move `vscode/settings.json` to the appropriate location depending on OS.
 
-On Mac the system font is fine, everywhere else install the Jetbrains Monospace fonts and set the VSCode settings to use it.
+On Mac, the system font is fine, everywhere else install the Jetbrains Monospace fonts and set the VSCode settings to use it.
+
+### Git
+
+```bash
+cd <this_repo>
+cp gitconfig ~/.gitconfig
+```
+Then add the appropriate email to `~/.gitconfig`
