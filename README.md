@@ -17,7 +17,7 @@ cp bashrc ~/.bash_rc
 Install [via curl](https://github.com/ohmybash/oh-my-bash?tab=readme-ov-file#via-curl)
 
 Install my custom theme based on `font`
-````bash
+```bash
 cd <this_repo>
 mkdir -p ~/.oh-my-bash/custom/themes/font
 cp oh-my-bash/custom/themes/font/font.theme.sh ~/.oh-my-bash/custom/themes/font/font.theme.sh
