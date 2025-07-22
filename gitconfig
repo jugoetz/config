@@ -1,0 +1,36 @@
+[user]
+        email = <add>
+        name = Julian Götz
+[credential]
+        helper = store
+[init]
+        defaultBranch = main
+[core]
+        editor = vim
+[column]
+        ui = auto
+[branch]
+        sort = -committerdate
+[tag]
+        sort = version:refname
+[diff]
+        algorithm = histogram
+        colorMoved = plain
+        mnemonicPrefix = true
+        renames = true
+[push]
+        default = simple
+        autoSetupRemote = true
+        followTags = true
+[fetch]
+        prune = true
+        pruneTags = true
+        all = true
+[help]
+        autocorrect = prompt
+[commit]
+        verbose = true
+[rebase]
+        autoSquash = true
+        autoStash = true
+        updateRefs = true
