@@ -6,6 +6,9 @@
         "editor.background": "#16161b",
         "sideBar.background": "#16161b"
     },
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 13,
+    "editor.fontLigatures": true,
     "outline.collapseItems": "alwaysCollapse",
     "zenMode.showTabs": "single",
     "files.autoSave": "afterDelay",
@@ -14,4 +17,6 @@
     "git.blame.editorDecoration.enabled": false,
     "git.blame.statusBarItem.template": "${hashShort} ${authorName} (${authorDateAgo})",
     "terminal.integrated.defaultProfile.osx": "bash"
+    "terminal.integrated.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 13
 }
