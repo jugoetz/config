@@ -1,0 +1,76 @@
+{
+    // PyMarkdown configuration file
+    // This file disables certain markdown linting rules that are too strict or 
+    // not appropriate for technical documentation.
+
+    "plugins": {
+        // MD013: Line length
+        // Disabled because documentation often contains long URLs, code examples, and
+        // technical descriptions that are harder to read when artificially wrapped
+        "md013": {
+            "enabled": false
+        },
+
+        // MD033: Inline HTML
+        // Disabled because HTML is sometimes necessary for images, styling, or
+        // advanced formatting in documentation (e.g., <img>, <div>)
+        "md033": {
+            "enabled": false
+        },
+
+        // MD046: Code block style (fenced vs indented)
+        // Disabled because mixed styles are acceptable and sometimes necessary
+        // (fenced for language specification, indented for simple examples)
+        "md046": {
+            "enabled": false
+        },
+
+        // MD030: Spaces after list markers
+        // Disabled because the difference between 1 and 2 spaces is stylistic
+        "md030": {
+            "enabled": false
+        },
+
+        // MD012: Multiple consecutive blank lines
+        // Disabled because 2 blank lines are sometimes used for visual separation
+        // in long documents (common practice in many style guides)
+        "md012": {
+            "enabled": false
+        },
+
+        // MD036: Emphasis used instead of heading
+        // Disabled because emphasized text (bold/italic) is legitimately used for
+        // emphasis in lists, summaries, and inline highlights, not just for headings
+        "md036": {
+            "enabled": false
+        },
+
+        // MD029: Ordered list item prefix
+        // Disabled because "lazy numbering" (using 1. for all items) is a common
+        // and acceptable practice that works well with most markdown renderers
+        "md029": {
+            "enabled": false
+        },
+
+        // MD024: Multiple headings with same content
+        // Disabled because duplicate headings are sometimes necessary in different
+        // sections (e.g., "Examples" or "Configuration" in multiple parts)
+        "md024": {
+            "enabled": false
+        },
+
+        // MD034: Bare URLs
+        // Disabled because plain URLs in documentation are acceptable and sometimes
+        // more readable than markdown link syntax, especially in technical docs
+        "md034": {
+            "enabled": false
+        },
+
+        // MD025: Multiple top-level headings
+        // Disabled because some documents (like data README files) legitimately
+        // need multiple H1 headings for different major sections
+        "md025": {
+            "enabled": false
+        }
+    }
+}
