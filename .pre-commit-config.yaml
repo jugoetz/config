@@ -1,0 +1,27 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+    -   id: check-yaml
+        exclude: 'mkdocs\.yml'
+    -   id: check-added-large-files
+        exclude: '\.ipynb$'
+
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.14.10
+  hooks:
+    # Run the linter and fix issues
+    - id: ruff-check
+      types_or: [ python, pyi ]
+      args: [ --fix, --ignore=E501]  # do not block commit b/c of line length
+    # Run the formatter.
+    - id: ruff-format
+      types_or: [ python, pyi ]
+
+- repo: https://github.com/jackdewinter/pymarkdown
+  rev: v0.9.35
+  hooks:
+      - id: pymarkdown
+        exclude: 'SKILL\.md'  # exclude SKILL.md files which have their own conventions
