@@ -1,0 +1,12 @@
+---
+description: Documentation standards and conventions
+globs:
+alwaysApply: true
+---
+# Documentation Standards Rule
+
+- Use **Google-style docstrings** for all public functions with type hints
+- Update documentation in the same PR as code changes (specs, guides, API reference)
+- Use Mermaid for diagrams in markdown
+- Write for both humans and AI: use precise language, complete code examples, avoid vague terms like "usually", "might", "could"
+- Documentation structure: `docs/specs/` (specifications), `docs/architecture/`, `docs/guides/`, `docs/api/`

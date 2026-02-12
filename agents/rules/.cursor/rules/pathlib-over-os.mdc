@@ -1,0 +1,10 @@
+---
+description:
+globs: *.py
+alwaysApply: false
+---
+# Path Handling Rule
+
+- Use `pathlib` for file and path operations instead of `os` where possible.
+- Prefer `Path` objects and their methods for creating directories, joining paths, checking existence, etc.
+- Only use `os` for functionality not available in `pathlib`.

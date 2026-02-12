@@ -1,0 +1,10 @@
+---
+description:
+globs: *.py
+alwaysApply: false
+---
+# Testing Framework Rule
+
+- Use `pytest` as the testing framework for this project.
+- Prefer `pytest` methods, fixtures, and idioms over `unittest` equivalents.
+- Write tests using plain functions and pytest's assertion rewriting, rather than unittest classes and methods, unless there is a strong reason otherwise.

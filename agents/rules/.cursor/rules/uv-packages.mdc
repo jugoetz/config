@@ -1,0 +1,10 @@
+---
+description:
+globs:
+alwaysApply: true
+---
+# Package Management Rule
+
+- Use `uv` to manage Python packages in this project.
+- When running a package directly (such as pytest or other CLI tools), use `uv run <package>` instead of calling the package directly.
+- Do not use pip or system package managers for Python dependencies in this project.

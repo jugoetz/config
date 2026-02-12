@@ -1,0 +1,12 @@
+---
+description: Spec-driven development workflow
+globs:
+alwaysApply: true
+---
+# Spec-Driven Development Rule
+
+- For new features or significant changes, check if a spec exists in `docs/specs/` or create one using the template at `docs/specs/README.md`
+- Implement features following spec requirements (REQ-F-001, etc.) and reference them in code comments and commit messages
+- Update spec status from "Draft" to "Implemented" when complete
+- Write specs for: new features/agents/tools, API changes, significant refactoring
+- Skip specs for: bug fixes, docs-only changes, trivial cleanup, dependency updates
